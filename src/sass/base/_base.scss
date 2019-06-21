@@ -1,0 +1,17 @@
+/* Univesal Selector -> Doing a Reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    //This defines what 1rem is
+    font-size: 62.5%; /* 10px */
+}
+
+body{
+    box-sizing: border-box; /* Change the box model so that the borders and the paddings are no longer added to the total width or height of an element */
+}
