@@ -180,6 +180,26 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.6rem; lin
 
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after { opacity: 1; }
 
+.popup { width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.85); z-index: 25; opacity: 0; visibility: hidden; transition: all .3s; }
+
+.popup:target { opacity: 1; visibility: visible; }
+
+.popup:target .popup__content { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+
+.popup__content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80vw; background-color: #fff; border-radius: .3rem; box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5); display: table; overflow: hidden; opacity: 0; transform: translate(-50%, -50%) scale(0.25); transition: all .5s .2s; }
+
+.popup__left { width: 33.33333%; display: table-cell; }
+
+.popup__right { width: 66.666667%; display: table-cell; vertical-align: middle; padding: 3rem 5rem; }
+
+.popup__img { display: block; width: 98%; }
+
+.popup__text { font-size: 1.4rem; margin-bottom: 4rem; -moz-column-count: 2; -moz-column-gap: 4rem; -moz-column-rule: 1px solid #eee; column-count: 2; column-gap: 4rem; column-rule: 1px solid #eee; -moz-hyphens: auto; -ms-hyphens: auto; -webkit-hyphens: auto; hyphens: auto; }
+
+.popup__close:link, .popup__close:visited { color: #777; position: absolute; top: 2.5rem; right: 2.5rem; font-size: 3rem; text-decoration: none; display: inline-block; transform: all .2s; line-height: 1; }
+
+.popup__close:hover { color: #55c57a; }
+
 .story { width: 75%; margin: 0 auto; padding: 6rem; padding-left: 9rem; box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.5); border-radius: .3rem; font-size: 1.6rem; transform: skewX(-12deg); }
 
 .story__shape { width: 15rem; height: 15rem; float: left; -webkit-shape-outside: circle(50% at 50% 50%); shape-outside: circle(50% at 50% 50%); -webkit-clip-path: circle(50% at 50% 50%); clip-path: circle(50% at 50% 50%); transform: translateX(-3rem) skewX(12deg); position: relative; }
