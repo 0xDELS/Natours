@@ -21,6 +21,12 @@
 
 html { font-size: 62.5%;  }
 
+@media (max-width: 75em) { html { font-size: 56.25%; } }
+
+@media (max-width: 56.25em) { html { font-size: 50%; } }
+
+@media (min-width: 112.5em) { html { font-size: 75%; } }
+
 body { box-sizing: border-box;  }
 
 body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.6rem; line-height: 1.7; color: #777; padding: 3rem; }
