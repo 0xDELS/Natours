@@ -248,7 +248,13 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.6rem; lin
 
 .story { width: 75%; margin: 0 auto; padding: 6rem; padding-left: 9rem; box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.5); border-radius: .3rem; font-size: 1.6rem; transform: skewX(-12deg); }
 
+@media (max-width: 56.25em) { .story { width: 100%; padding: 4rem; padding-left: 7rem; } }
+
+@media (max-width: 37.5em) { .story { transform: skew(0); } }
+
 .story__shape { width: 15rem; height: 15rem; float: left; -webkit-shape-outside: circle(50% at 50% 50%); shape-outside: circle(50% at 50% 50%); -webkit-clip-path: circle(50% at 50% 50%); clip-path: circle(50% at 50% 50%); transform: translateX(-3rem) skewX(12deg); position: relative; }
+
+@media (max-width: 37.5em) { .story__shape { transform: translateX(-3rem) skew(0); } }
 
 .story__image { height: 100%; transform: translateX(-4rem) scale(1.4); transition: all .5s; }
 
@@ -259,6 +265,8 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.6rem; lin
 .story:hover .story__image { transform: translateX(-4rem) scale(1); filter: blur(0.3rem) brightness(80%); }
 
 .story__text { transform: skewX(12deg); }
+
+@media (max-width: 37.5em) { .story__text { transform: skewX(0); } }
 
 .footer { background-color: #333; padding: 10rem; font-size: 1.4rem; }
 
