@@ -204,6 +204,8 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.6rem; lin
 
 .form__input { font-size: 1.5rem; font-family: inherit; color: inherit; padding: 1.5rem 2rem; border-radius: .2rem; background-color: rgba(255, 255, 255, 0.5); border: none; border-bottom: .3rem solid transparent; width: 90%; display: block; transition: all .3s; }
 
+@media (max-width: 56.25em) { .form__input { width: 100%; } }
+
 .form__input:focus { outline: none; box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); border-bottom: 0.3rem solid #55c57a; }
 
 .form__input:focus:invalid { border-bottom: 0.3rem solid #ff7730; }
@@ -215,6 +217,8 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.6rem; lin
 .form__input:placeholder-shown + .form__label { opacity: 0; visibility: hidden; transform: translateY(-4rem); }
 
 .form__radio-group { width: 45%; display: inline-block; }
+
+@media (max-width: 56.25em) { .form__radio-group { width: 100%; margin-bottom: 2rem; } }
 
 .form__radio-input { display: none; }
 
@@ -406,6 +410,14 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.6rem; lin
 
 @media (max-width: 56.25em) { .section-book { padding: 10rem 0; } }
 
-.book { background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg); background-size: cover; height: 50rem; border-radius: .3rem; box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+.book { background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg); background-size: cover; border-radius: .3rem; box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+
+@media (max-width: 75em) { .book { background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg); } }
+
+@media (max-width: 56.25em) { .book { background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
 
 .book__form { width: 50%; padding: 6rem; }
+
+@media (max-width: 75em) { .book__form { width: 65%; } }
+
+@media (max-width: 56.25em) { .book__form { width: 100%; } }
