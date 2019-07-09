@@ -240,6 +240,8 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.6rem; lin
 
 .popup__left { width: 33.33333%; display: table-cell; }
 
+@media (max-width: 56.25em) { .popup__left { display: none; } }
+
 .popup__right { width: 66.666667%; display: table-cell; vertical-align: middle; padding: 3rem 5rem; }
 
 .popup__img { display: block; width: 98%; }
