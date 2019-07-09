@@ -157,6 +157,17 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.6rem; lin
 
 .card__price-value { font-size: 6rem; font-weight: 100; }
 
+@media (max-width: 56.25em) { .card { height: auto; background-color: #fff; border-radius: .3rem; box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .card__side { height: auto; position: relative; box-shadow: none; }
+  .card__side--back { transform: rotateY(0); -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+  .card:hover .card__side--front { transform: rotateY(0); }
+  .card:hover .card__side--back { transform: rotateY(0); }
+  .card__details { padding: 1rem 3rem; }
+  .card__cta { position: relative; top: 0; left: 0; width: 100%; text-align: center; transform: translate(0); padding: 7rem 4rem 4rem 4rem; }
+  .card__price-box { text-align: center; margin-bottom: 3rem; color: #fff; }
+  .card__price-only { font-size: 1.4rem; text-transform: uppercase; }
+  .card__price-value { font-size: 4rem; font-weight: 100; } }
+
 .composition { position: relative; }
 
 .composition__photo { width: 55%; box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); border-radius: 2px; position: absolute; z-index: 9; transition: all .2s; outline-offset: 2rem; }
