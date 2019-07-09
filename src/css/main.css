@@ -61,9 +61,15 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.6rem; lin
 
 .u-margin-bottom-big { margin-bottom: 8rem !important; }
 
+@media (max-width: 56.25em) { .u-margin-bottom-big { margin-bottom: 5rem !important; } }
+
 .u-margin-bottom-medium { margin-bottom: 4rem !important; }
 
+@media (max-width: 56.25em) { .u-margin-bottom-medium { margin-bottom: 3rem !important; } }
+
 .u-margin-bottom-small { margin-bottom: 1.5rem !important; }
+
+@media (max-width: 56.25em) { .u-margin-bottom-small { margin-bottom: 1rem !important; } }
 
 .u-margin-top-huge { margin-top: 10rem !important; }
 
