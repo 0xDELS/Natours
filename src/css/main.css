@@ -230,7 +230,9 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.6rem; lin
 
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after { opacity: 1; }
 
-.popup { width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.85); z-index: 25; opacity: 0; visibility: hidden; transition: all .3s; }
+.popup { width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 25; opacity: 0; visibility: hidden; transition: all .3s; background-color: rgba(0, 0, 0, 0.85); }
+
+@supports (-webkit-backdrop-filter: blur(10px)) { .popup { -webkit-backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.3); } }
 
 .popup:target { opacity: 1; visibility: visible; }
 
