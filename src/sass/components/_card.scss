@@ -13,6 +13,7 @@
         left: 0;
         width: 100%;
         //Hides the backpart of an element
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: .3rem;
         //Hide the "corners" of the images

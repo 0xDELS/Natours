@@ -107,7 +107,7 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 1.6rem; lin
 
 .card { perspective: 150rem; -moz-perspective: 150rem; position: relative; height: 50rem; }
 
-.card__side { height: 50rem; transition: all .8s ease; position: absolute; top: 0; left: 0; width: 100%; backface-visibility: hidden; border-radius: .3rem; overflow: hidden; box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+.card__side { height: 50rem; transition: all .8s ease; position: absolute; top: 0; left: 0; width: 100%; -webkit-backface-visibility: hidden; backface-visibility: hidden; border-radius: .3rem; overflow: hidden; box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
 
 .card__side--front { background-color: #fff; }
 
