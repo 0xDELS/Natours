@@ -2,7 +2,7 @@
 Example of what could be a website for a hiking / trail business.
 
 ## Description
-This is a dummy project with the intent to improve my knowlegde with CSS Animations and Design Patterns.
+This is a dummy project with the intent to improve my knowledge with CSS Animations and Design Patterns.
 The BEM (Block Element Modifier) Methodology was used in order to maintain a great modularity and reusability in the HTML.
 It was also implemented the 7-1 Pattern in the Sass (SCSS) files.
 
